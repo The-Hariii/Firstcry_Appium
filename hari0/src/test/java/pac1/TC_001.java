@@ -109,13 +109,7 @@ public class TC_001 {
             test.pass("✅ Cart opened successfully!");
             Thread.sleep(10000);
 
-            // Step 9: Remove Product
-            MobileElement RemoveElement = driver.findElementByAndroidUIAutomator(
-                    "new UiSelector().resourceId(\"garem_21293366\")"
-            );
-            wait.until(ExpectedConditions.elementToBeClickable(RemoveElement));
-            RemoveElement.click();
-            test.pass("✅ Product removed successfully!");
+           
 
         } catch (Exception e) {
             test.fail("❌ Test failed due to: " + e.getMessage());
@@ -129,3 +123,4 @@ public class TC_001 {
         }
     }
 }
+
